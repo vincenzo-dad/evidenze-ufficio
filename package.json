@@ -1,0 +1,16 @@
+{
+  "name": "evidenze-ufficio",
+  "version": "1.0.0",
+  "description": "Applicazione per gestione evidenze di ufficio con notifiche email automatiche",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm start",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "start": "cd server && node index.js"
+  },
+  "keywords": ["evidenze", "ufficio", "gestione", "email", "real-time"],
+  "author": "",
+  "license": "MIT"
+}
