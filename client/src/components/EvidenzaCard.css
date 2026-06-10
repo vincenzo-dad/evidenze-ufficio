@@ -1,0 +1,214 @@
+.evidenza-card {
+  background: white;
+  border-left: 4px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  transition: all 0.3s;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.evidenza-card.ok {
+  border-left-color: #27ae60;
+}
+
+.evidenza-card.warning {
+  border-left-color: #f39c12;
+}
+
+.evidenza-card.urgent {
+  border-left-color: #e74c3c;
+  background: #fadbd8;
+}
+
+.evidenza-card.expired {
+  border-left-color: #c0392b;
+  background: #f5b7b1;
+}
+
+.evidenza-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.title-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+}
+
+.title-section h3 {
+  margin: 0;
+  color: #333;
+  font-size: 18px;
+}
+
+.priority {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.priority.bassa {
+  background: #d5f4e6;
+  color: #27ae60;
+}
+
+.priority.media {
+  background: #fef5e7;
+  color: #f39c12;
+}
+
+.priority.alta {
+  background: #fadbd8;
+  color: #e74c3c;
+}
+
+.priority.critica {
+  background: #f5b7b1;
+  color: #c0392b;
+}
+
+.days-badge {
+  background: #667eea;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.card-body {
+  margin-bottom: 12px;
+}
+
+.description {
+  color: #666;
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  font-size: 13px;
+  color: #777;
+}
+
+.category,
+.date,
+.status {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.card-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.edit-btn,
+.delete-btn {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.edit-btn {
+  background: #667eea;
+  color: white;
+}
+
+.edit-btn:hover {
+  background: #5568d3;
+}
+
+.delete-btn {
+  background: #ecf0f1;
+  color: #e74c3c;
+}
+
+.delete-btn:hover {
+  background: #e74c3c;
+  color: white;
+}
+
+/* Edit Mode */
+.evidenza-card.editing {
+  background: #f8f9fa;
+  border: 2px solid #667eea;
+}
+
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.edit-form input,
+.edit-form textarea,
+.edit-form select {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 13px;
+  font-family: inherit;
+}
+
+.edit-form input:focus,
+.edit-form textarea:focus,
+.edit-form select:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 5px rgba(102, 126, 234, 0.3);
+}
+
+.edit-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.save-btn,
+.cancel-btn {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.save-btn {
+  background: #27ae60;
+  color: white;
+}
+
+.save-btn:hover:not(:disabled) {
+  background: #229954;
+}
+
+.cancel-btn {
+  background: #ecf0f1;
+  color: #666;
+}
+
+.cancel-btn:hover {
+  background: #bdc3c7;
+}
