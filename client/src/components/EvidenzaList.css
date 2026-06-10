@@ -1,0 +1,12 @@
+.evidenza-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.no-data {
+  text-align: center;
+  padding: 40px;
+  color: #999;
+  font-size: 18px;
+}
