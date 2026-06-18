@@ -4,7 +4,7 @@ import Login from './components/Login';
 import Dashboard from './components/Dashboard';
 import './App.css';
 
-const API_URL = 'https://evidenze-ufficio-backend.onrender.com'; // postgresql://evidenze_db_user:kULOWOpqvROFKSf4OkjQY3PfDZBaCJWF@dpg-d8pv4qbeo5us73aivfbg-a/evidenze_db
+const API_URL = 'https://evidenze-ufficio-backend.onrender.com';  postgresql://evidenze_db_user:kULOWOpqvROFKSf4OkjQY3PfDZBaCJWF@dpg-d8pv4qbeo5us73aivfbg-a/evidenze_db
 
 function App() {
   const [token, setToken] = useState(localStorage.getItem('token'));
