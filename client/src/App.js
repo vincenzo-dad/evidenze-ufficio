@@ -4,7 +4,8 @@ import Login from './components/Login';
 import Dashboard from './components/Dashboard';
 import './App.css';
 
-const API_URL = 'https://evidenze-ufficio-backend.onrender.com'; // https://evidenze-ufficio.onrender.com
+const SOCKET_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+
 
 function App() {
   const [token, setToken] = useState(localStorage.getItem('token'));
