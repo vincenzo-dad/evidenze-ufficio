@@ -4,7 +4,7 @@ import Login from './components/Login';
 import Dashboard from './components/Dashboard';
 import './App.css';
 
-const SOCKET_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+const API_URL = 'https://api.render.com/deploy/srv-d8pvag68bjmc73c6l5h0?key=HlNtkrpU040';
 
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
 
   useEffect(() => {
     if (token) {
-      const newSocket = io(SOCKET_URL, {
+      const newSocket = io(API_URL, {
         auth: { token }
       });
       setSocket(newSocket);
